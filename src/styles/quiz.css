@@ -1,0 +1,14 @@
+.quiz {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1.5em;
+  background-color: #1d2935;
+}
+
+@media (max-width: 600px) {
+  .quiz {
+    font-size: 0.7em;
+  }
+}
+/*# sourceMappingURL=quiz.css.map */

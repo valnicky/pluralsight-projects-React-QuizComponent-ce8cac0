@@ -1,0 +1,14 @@
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item button {
+  font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+  .list-group-item button {
+    font-size: 0.7em;
+  }
+}
+/*# sourceMappingURL=quizquestionbutton.css.map */

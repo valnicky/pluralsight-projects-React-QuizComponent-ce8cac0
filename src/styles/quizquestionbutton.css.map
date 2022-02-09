@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACb,MAAM,EAAE,OAAO;CAIlB;;AALD,AAEI,gBAFY,CAEZ,MAAM,CAAC;EACH,SAAS,EAAE,KAAK;CACnB;;AAGL,MAAM,EAAE,SAAS,EAAE,KAAK;EACpB,AAAA,gBAAgB,CAAC,MAAM,CAAC;IACpB,SAAS,EAAE,KAAK;GACnB",
+    "sources": [
+        "quizquestionbutton.scss"
+    ],
+    "names": [],
+    "file": "quizquestionbutton.css"
+}

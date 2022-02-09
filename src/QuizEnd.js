@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 class QuizEnd extends Component {
          handleResetClick ()  {
         this.props.resetClickHandler();
@@ -8,7 +8,7 @@ class QuizEnd extends Component {
    
         return (
             <div>
-                <p>Thanks for playing!</p>
+                <p className="h4">Thanks for playing!</p>
                  <a href=''  onClick={this.handleResetClick.bind(this)}>Reset Quiz</a>
             </div>
         );

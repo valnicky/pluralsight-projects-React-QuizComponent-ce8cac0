@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import QuizQuestion from './QuizQuestion.js'
 import QuizEnd from './QuizEnd.js'
+import './styles/quiz.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 let quizData = require('./quiz_data.json');
 
@@ -19,8 +21,8 @@ class Quiz extends Component {
     render() {
         const isQuizEnd = (this.state.quiz_position - 1) === quizData.quiz_questions.length;
 
-        return ( <div> {
-                (isQuizEnd === true) ? < QuizEnd resetClickHandler = { this.handleResetClick.bind(this) } /> :  <QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position-1]} showNextQuestionHandler={this.showNextQuestion.bind(this)}/> } </div>  );          
+        return ( <div className="container quiz p-5  text-weight-bolder d-flex justify-content-center align-content-center text-light  "> {
+                (isQuizEnd === true) ? < QuizEnd  resetClickHandler = { this.handleResetClick.bind(this) } /> :  <QuizQuestion className="bg-danger"  quiz_question={quizData.quiz_questions[this.state.quiz_position-1]} showNextQuestionHandler={this.showNextQuestion.bind(this)}/> } </div>  );          
         }
     }
 
