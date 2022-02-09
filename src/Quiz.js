@@ -21,7 +21,7 @@ class Quiz extends Component {
     render() {
         const isQuizEnd = (this.state.quiz_position - 1) === quizData.quiz_questions.length;
 
-        return ( <div className="container quiz p-5  text-weight-bolder d-flex justify-content-center align-content-center text-light  "> {
+        return ( <div className=" quiz my-5 py-5 mx-auto  text-weight-bolder d-flex justify-content-center align-content-center text-light  "> {
                 (isQuizEnd === true) ? < QuizEnd  resetClickHandler = { this.handleResetClick.bind(this) } /> :  <QuizQuestion className="bg-danger"  quiz_question={quizData.quiz_questions[this.state.quiz_position-1]} showNextQuestionHandler={this.showNextQuestion.bind(this)}/> } </div>  );          
         }
     }
